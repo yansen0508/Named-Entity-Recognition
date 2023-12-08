@@ -70,7 +70,9 @@ The checkpoints are provided at [models](models/readme.md).
 
 <img src="img/training_A.png" alt="*Training Results*" width="800"/>
 
-**Evaluation**
+**Evaluation** 
+
+(also available at `models/test_results_A.json`)
 
 <img src="img/eva_A.png" alt="*Evaluation Results*" width="800"/>
 
@@ -116,7 +118,9 @@ Tokenizers: 0.15.0
 
 <img src="img/training_B.png" alt="*Training Results*" width="800"/>
 
-**Evaluation**
+**Evaluation** 
+
+(also available at `models/test_results_B.json`)
 
 <img src="img/eva_B.png" alt="*Evaluation Results*" width="800"/>
 
