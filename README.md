@@ -10,9 +10,21 @@ To install the required packages, run:
 ```
 pip install -r requirements.txt
 ```
+### Framework Versions
+Python: 3.10.12
+
+SpanMarker: 1.5.0
+
+Transformers: 4.35.2
+
+PyTorch: 2.1.0+cu118
+
+Datasets: 2.15.0
+
+Tokenizers: 0.15.0
 
 ## Usage
-The project has been done on Google Colab.
+The project has been done on Google Colab (with 1 V100 GPU).
 
 For details, please see `Named Entity Recognition.ipynb`.
 
@@ -24,4 +36,98 @@ For System B, the dataset is filtered to include only certain entity types.
 ## Models
 The pre-trained model [tomaarsen/span-marker-mbert-base-multinerd](https://huggingface.co/tomaarsen/span-marker-mbert-base-multinerd) used for fine-tuning comes from Hugging Face's Transformers library.
 
+Maximum Sequence Length: 256 tokens
 
+Maximum Entity Length: 8 words
+
+### System A
+
+[*Model Labels*](/img/label_A.png)
+
+
+**Training Hyperparameters**
+
+- learning_rate: 5e-05
+
+- train_batch_size: 16
+
+- eval_batch_size: 16
+
+- seed: 42
+
+- gradient_accumulation_steps: 2
+
+- total_train_batch_size: 32
+
+- optimizer: Adam with betas=(0.9,0.999) and epsilon=1e-08
+
+- lr_scheduler_type: linear
+
+- lr_scheduler_warmup_ratio: 0.1
+
+- num_epochs: 1
+
+
+[*Training Results*](/img/training_A.png)
+
+[*Evaluation Results*](/img/metrics_A.png)
+
+**Framework Versions**
+
+Python: 3.10.12
+
+SpanMarker: 1.5.0
+
+Transformers: 4.35.2
+
+PyTorch: 2.1.0+cu118
+
+Datasets: 2.15.0
+
+Tokenizers: 0.15.0
+
+### System B
+
+[*Model Labels*](/img/label_B.png)
+
+
+**Training Hyperparameters**
+
+- learning_rate: 5e-05
+
+- train_batch_size: 16
+
+- eval_batch_size: 16
+
+- seed: 42
+
+- gradient_accumulation_steps: 2
+
+- total_train_batch_size: 32
+
+- optimizer: Adam with betas=(0.9,0.999) and epsilon=1e-08
+
+- lr_scheduler_type: linear
+
+- lr_scheduler_warmup_ratio: 0.1
+
+- num_epochs: 1
+
+
+[*Training Results*](/img/training_B.png)
+
+[*Evaluation Results*](/img/metrics_B.png)
+
+**Framework Versions**
+
+Python: 3.10.12
+
+SpanMarker: 1.5.0
+
+Transformers: 4.35.2
+
+PyTorch: 2.1.0+cu118
+
+Datasets: 2.15.0
+
+Tokenizers: 0.15.0
