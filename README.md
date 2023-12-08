@@ -133,4 +133,13 @@ PyTorch: 2.1.0+cu118
 
 Datasets: 2.15.0
 
+# Conclusion
+
+In this project (NER task on MultiNERD English subset), I observed distinct outcomes for System A and System B, each fine-tuned using the same pre-trained model. 
+System A, which utilized the full scope of the English subset, demonstrated slightly performance than the pretrained model. 
+
+Conversely, System B, focused on a subset of entities (PERSON, ORGANIZATION, LOCATION, DISEASES, ANIMAL), showed higher precision and recall in these specific categories. This specialization allowed for more targeted learning, leading to improved accuracy on these entities but at the expense of a narrower overall understanding.
+
+A limitation of the selected pre-trained model was its generalization capability when adapted to specific subsets of data. While it performed well on common entity types like LOCATION and PERSON, its effectiveness varied on rarer categories like ANIMAL and DISEASES, indicating a potential need for more specialized or further pre-training on diverse datasets. This variation underscores the trade-off between specialized and generalized models, where the former excels in specific tasks but may lack broader applicability, a crucial factor in real-world applications.
+
 Tokenizers: 0.15.0
