@@ -40,10 +40,9 @@ Maximum Sequence Length: 256 tokens
 
 Maximum Entity Length: 8 words
 
-### System A
+## **System A**
 
-[*Model Labels*](/img/label_A.png)
-
+<img src="img/label_A.png" alt="*Model Labels*" width="600"/>
 
 **Training Hyperparameters**
 
@@ -67,10 +66,11 @@ Maximum Entity Length: 8 words
 
 - num_epochs: 1
 
+<img src="img/training_A.png" alt="*Training Results*" width="800"/>
 
-[*Training Results*](/img/training_A.png)
+**Evaluation**
 
-[*Evaluation Results*](/img/metrics_A.png)
+<img src="img/eva_A.png" alt="*Evaluation Results*" width="800"/>
 
 **Framework Versions**
 
@@ -86,10 +86,9 @@ Datasets: 2.15.0
 
 Tokenizers: 0.15.0
 
-### System B
+## **System B**
 
-[*Model Labels*](/img/label_B.png)
-
+<img src="img/label_B.png" alt="*Model Labels*" width="600"/>
 
 **Training Hyperparameters**
 
@@ -113,10 +112,12 @@ Tokenizers: 0.15.0
 
 - num_epochs: 1
 
+<img src="img/training_B.png" alt="*Training Results*" width="800"/>
 
-[*Training Results*](/img/training_B.png)
+**Evaluation**
 
-[*Evaluation Results*](/img/metrics_B.png)
+<img src="img/eva_B.png" alt="*Evaluation Results*" width="800"/>
+
 
 **Framework Versions**
 
