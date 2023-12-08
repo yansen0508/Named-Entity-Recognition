@@ -1,9 +1,9 @@
 # MultiNERD Fine-Tuning Project
 
 ## Description
-This project involves fine-tuning a language model on the MultiNERD dataset for Named Entity Recognition (NER) tasks. The focus is on two systems:
+This project involves fine-tuning a language model on the [MultiNERD dataset](https://huggingface.co/datasets/Babelscape/multinerd?row=17) for Named Entity Recognition (NER) tasks. The focus is on two systems:
 - System A: Fine-tuning on the English subset.
-- System B: Fine-tuning on a subset of the dataset with specific 5 entity types:  PERSON(PER), ORGANIZATION(ORG), LOCATION(LOC), DISEASES(DIS), ANIMAL(ANIM) as well as 'O' tag.
+- System B: Fine-tuning on a subset of the dataset with specific 5 entity types: `PERSON(PER), ORGANIZATION(ORG), LOCATION(LOC), DISEASES(DIS), ANIMAL(ANIM)` as well as the `O` tag (all other entities will be set to zero).
 
 ## Requirements
 To install the required packages, run:
@@ -11,9 +11,10 @@ To install the required packages, run:
 pip install -r requirements.txt
 ```
 
-
 ## Usage
-Explain here how to run your training scripts, including any necessary steps to prepare the data.
+The project has been done on Google Colab.
+
+For details, please see `Named Entity Recognition.ipynb`.
 
 ## Dataset
 The dataset used is the MultiNERD dataset, which is a multi-lingual NER dataset. 
