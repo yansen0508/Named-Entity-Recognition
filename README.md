@@ -66,7 +66,7 @@ The checkpoints are provided at [models](models/readme.md).
 
 - lr_scheduler_warmup_ratio: 0.1
 
-- num_epochs: 1
+- num_epochs: 3
 
 <img src="img/training_A.png" alt="*Training Results*" width="800"/>
 
@@ -112,7 +112,7 @@ Tokenizers: 0.15.0
 
 - lr_scheduler_warmup_ratio: 0.1
 
-- num_epochs: 1
+- num_epochs: 3
 
 <img src="img/training_B.png" alt="*Training Results*" width="800"/>
 
