@@ -73,7 +73,7 @@ Maximum Entity Length: 8 words
 
 <img src="img/training_A.png" alt="*Training Results*" width="800"/>
 
-**Evaluation** 
+**Testing** 
 
 (also available at `models/test_results_A.json`)
 
@@ -108,7 +108,7 @@ Maximum Entity Length: 8 words
 
 <img src="img/training_B.png" alt="*Training Results*" width="800"/>
 
-**Evaluation** 
+**Testing** 
 
 (also available at `models/test_results_B.json`)
 
