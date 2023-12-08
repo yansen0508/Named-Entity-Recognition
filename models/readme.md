@@ -1,5 +1,5 @@
 Checkpoints of System A and System B can be found at:
 
-[checkpoint of System A](https://drive.google.com/drive/folders/1FujVaFpvme2orpg0jcRTjlzsd65y4mJj?usp=drive_link), [test_results of System A](https://drive.google.com/file/d/1FknYFPUwzoO0PeNIsNiZUnjCd_d27TN7/view?usp=drive_link), and [tensorboard](https://drive.google.com/drive/folders/1-3gJcj38Bnmgm9r6fBrvbzbIH5AP518q?usp=drive_link). 
+[checkpoint of System A](https://drive.google.com/file/d/1jrmNEpz1xVVeNxq6JGSc751NDFGqOJZG/view?usp=sharing), [test_results of System A](https://drive.google.com/file/d/1FknYFPUwzoO0PeNIsNiZUnjCd_d27TN7/view?usp=sharing), and [tensorboard](https://drive.google.com/file/d/1mJhzP2IM0huMdm71gjyjF06K-IqoP_KX/view?usp=sharing). 
 
-[checkpoint of System B](https://drive.google.com/drive/folders/1HAyOJzxlCsnjNHylHzHXx_3Hq0NIV_JA?usp=drive_link), [test_results of System B](https://drive.google.com/file/d/1HlC39HKF1U64_wCeqmHwcxyV1lPqM5rb/view?usp=drive_link), and [tensorboard](https://drive.google.com/drive/folders/1-29PgXKCbGVJG2sfZrmUEqcenQ-A1Uu3?usp=drive_link).
+[checkpoint of System B](https://drive.google.com/file/d/1am4cjvKu0CtxNcCioKGRTG5k6ObxVaDv/view?usp=sharing), [test_results of System B](https://drive.google.com/file/d/1HlC39HKF1U64_wCeqmHwcxyV1lPqM5rb/view?usp=sharing), and [tensorboard](https://drive.google.com/file/d/13ftd6j5hFb9wGXAMTbuXXbEJT3bNqkcE/view?usp=sharing).
