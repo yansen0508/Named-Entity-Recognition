@@ -118,14 +118,26 @@ Maximum Entity Length: 8 words
 # Conclusion
 
 In this project (NER task on MultiNERD English subset), I observed distinct outcomes for System A and System B, each fine-tuned using the same pre-trained model. 
-System A, which utilized the full scope of the English subset, demonstrated slightly performance than the pre-trained model. 
 
-<img src="img/distribution_train.png" alt="*img/distribution_train.png*" width="400"/>
-<img src="img/distribution_val.png" alt="*img/distribution_val.png*" width="400"/>
-<img src="img/distribution_test.png" alt="*img/distribution_test.png*" width="400"/>
+System A, which utilized the full scope of the English subset, demonstrated slightly better performance (on the English subset) than the pre-trained model. 
 
-Conversely, System B, focused on a subset of entities (PERSON, ORGANIZATION, LOCATION, DISEASES, ANIMAL), showed higher precision and recall in these specific categories. This specialization allowed for more targeted learning, leading to improved accuracy on these entities but at the expense of a narrower overall understanding.
+Conversely, System B, focused on a subset of entities (PERSON, ORGANIZATION, LOCATION, DISEASES, ANIMAL), showed better performance in these specific entities. This specialization allowed for more targeted learning, leading to improved accuracy on these entities but at the expense of a narrower overall understanding.
 
-A limitation of the selected pre-trained model was its generalization capability when adapted to specific subsets of data. While it performed well on common entity types like LOCATION and PERSON, its effectiveness varied on rarer categories like ANIMAL and DISEASES, indicating a potential need for more specialized or further pre-training on diverse datasets. This variation underscores the trade-off between specialized and generalized models, where the former excels in specific tasks but may lack broader applicability, a crucial factor in real-world applications.
+I illustrate the data distribution of [training set](img/distribution_train.png), [validation set](img/distribution_val.png), and [testing set](img/distribution_test.png).
 
-Tokenizers: 0.15.0
+<img src="img/distribution_train.png" alt="*img/distribution_train.png*" width="300"/> <img src="img/distribution_val.png" alt="*img/distribution_val.png*" width="300"/> <img src="img/distribution_test.png" alt="*img/distribution_test.png*" width="300"/>
+
+Obviously, they are "**long tails**". It is a common challenge for each downstream task that models should tackle the long-tail distributed data. This can also explain why in System A and System B, the model performs *worse* in recognizing some specific entities on the 'tail', such as `BIO`, `FOOD`, and `DIS`, than the entities on the 'head' such as `PER` and `LOC`.
+
+To tackle this **long-tail** challenge, we can collect more data 'on the tail' thus establishing a relatively less biased dataset.
+
+However, it is not that easy to establish such a dataset. 
+Considering 
+*   "Ambiguity" (e.g., "apple" can be a fruit or a company),
+*   "Cross-cultural/Multilingual",
+*   "Non-standardized/Unstructured data" (e.g., how we talk/write in social media),
+*   "New entities/words",
+*   "Expertise" (e.g., in science and laws, there will be a vast number of specialized entity types.)
+*   "High-quality annotation" (e.g., might require annotators with specialized knowledge.)
+  
+we can get inspired by approaches/concepts from some other research domains, such as [IMGA](https://github.com/yansen0508/IMGA) and [MDR](https://github.com/yansen0508/Mental-Deep-Reverse-Engineering).
