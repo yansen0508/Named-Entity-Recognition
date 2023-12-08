@@ -40,6 +40,8 @@ Maximum Sequence Length: 256 tokens
 
 Maximum Entity Length: 8 words
 
+The checkpoints are provided at [models](models/readme.md).
+
 ## **System A**
 
 <img src="img/label_A.png" alt="*Model Labels*" width="600"/>
