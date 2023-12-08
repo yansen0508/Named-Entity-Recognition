@@ -1,0 +1,41 @@
+{
+    "epoch": 1.0,
+    "test_ANIM": {
+        "f1": 0.7718018839258584,
+        "number": 3208,
+        "precision": 0.7528156490812092,
+        "recall": 0.7917705735660848
+    },
+    "test_DIS": {
+        "f1": 0.7906371911573472,
+        "number": 1514,
+        "precision": 0.7784891165172856,
+        "recall": 0.8031704095112285
+    },
+    "test_LOC": {
+        "f1": 0.9947191151399227,
+        "number": 24046,
+        "precision": 0.9945950440711792,
+        "recall": 0.9948432171670964
+    },
+    "test_ORG": {
+        "f1": 0.9831945495836488,
+        "number": 6616,
+        "precision": 0.9848346982104944,
+        "recall": 0.9815598548972189
+    },
+    "test_PER": {
+        "f1": 0.9938336021250355,
+        "number": 10530,
+        "precision": 0.9927975739196361,
+        "recall": 0.9948717948717949
+    },
+    "test_loss": 0.0019166907295584679,
+    "test_overall_accuracy": 0.9942741877386355,
+    "test_overall_f1": 0.9701025551885972,
+    "test_overall_precision": 0.967789482810942,
+    "test_overall_recall": 0.9724267108071613,
+    "test_runtime": 176.3286,
+    "test_samples_per_second": 207.839,
+    "test_steps_per_second": 12.993
+}
