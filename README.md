@@ -26,7 +26,7 @@ Tokenizers: 0.15.0
 ## Usage
 The project has been done on Google Colab (with 1 V100 GPU).
 
-For details, please see `Named Entity Recognition.ipynb`.
+For details, please open `Named Entity Recognition.ipynb` via Colab.
 
 ## Dataset
 The dataset used is the MultiNERD dataset, which is a multi-lingual NER dataset. 
