@@ -36,13 +36,16 @@ For System B, the dataset is filtered to include only certain entity types.
 ## Models
 The pre-trained model [tomaarsen/span-marker-mbert-base-multinerd](https://huggingface.co/tomaarsen/span-marker-mbert-base-multinerd) used for fine-tuning comes from Hugging Face's Transformers library.
 
+To review their results and training script of this pre-trained model, please refer to the official model page: [tomaarsen/span-marker-mbert-base-multinerd](https://huggingface.co/tomaarsen/span-marker-mbert-base-multinerd).
+
+
 Maximum Sequence Length: 256 tokens
 
 Maximum Entity Length: 8 words
 
-The checkpoints are provided at [models](models/readme.md).
+### **The fine-tuned checkpoints of System A and System B are provided [here](models/readme.md).**
 
-## **System A**
+## **More about System A**
 
 <img src="img/label_A.png" alt="*Model Labels*" width="600"/>
 
@@ -76,21 +79,8 @@ The checkpoints are provided at [models](models/readme.md).
 
 <img src="img/eva_A.png" alt="*Evaluation Results*" width="800"/>
 
-**Framework Versions**
 
-Python: 3.10.12
-
-SpanMarker: 1.5.0
-
-Transformers: 4.35.2
-
-PyTorch: 2.1.0+cu118
-
-Datasets: 2.15.0
-
-Tokenizers: 0.15.0
-
-## **System B**
+## **More about System B**
 
 <img src="img/label_B.png" alt="*Model Labels*" width="600"/>
 
@@ -124,18 +114,6 @@ Tokenizers: 0.15.0
 
 <img src="img/eva_B.png" alt="*Evaluation Results*" width="800"/>
 
-
-**Framework Versions**
-
-Python: 3.10.12
-
-SpanMarker: 1.5.0
-
-Transformers: 4.35.2
-
-PyTorch: 2.1.0+cu118
-
-Datasets: 2.15.0
 
 # Conclusion
 
