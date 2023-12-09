@@ -125,7 +125,7 @@ Conversely, System B, focused on a subset of entities (PERSON, ORGANIZATION, LOC
 
 I illustrate the data distribution of [training set](img/distribution_train.png), [validation set](img/distribution_val.png), and [testing set](img/distribution_test.png).
 
-<img src="img/distribution_train.png" alt="*img/distribution_train.png*" width="300"/> <img src="img/distribution_val.png" alt="*img/distribution_val.png*" width="300"/> <img src="img/distribution_test.png" alt="*img/distribution_test.png*" width="300"/>
+<img src="img/distribution_train.png" alt="*img/distribution_train.png*" width="400"/> <img src="img/distribution_val.png" alt="*img/distribution_val.png*" width="400"/> <img src="img/distribution_test.png" alt="*img/distribution_test.png*" width="400"/>
 
 Obviously, they are "**long tails**". It is a common challenge for each downstream task that models should tackle the long-tail distributed data. This can also explain why in System A and System B, the model performs *worse* in recognizing some specific entities on the 'tail', such as `BIO`, `FOOD`, and `DIS`, than the entities on the 'head' such as `PER` and `LOC`.
 
