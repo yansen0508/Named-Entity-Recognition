@@ -123,11 +123,11 @@ System A, which utilized the full scope of the English subset, demonstrated slig
 
 Conversely, System B, focused on a subset of entities (PERSON, ORGANIZATION, LOCATION, DISEASES, ANIMAL), showed better performance in these specific entities. This specialization allowed for more targeted learning, leading to improved accuracy on these entities but at the expense of a narrower overall understanding.
 
-I illustrate the data distribution of [training set](img/distribution_train.png), [validation set](img/distribution_val.png), and [testing set](img/distribution_test.png).
+Illustrating the data distribution of [training set](img/distribution_train.png), [validation set](img/distribution_val.png), and [testing set](img/distribution_test.png), obviously, they are "**long tails**".
 
 <img src="img/distribution_train.png" alt="*img/distribution_train.png*" width="400"/> <img src="img/distribution_val.png" alt="*img/distribution_val.png*" width="400"/> <img src="img/distribution_test.png" alt="*img/distribution_test.png*" width="400"/>
 
-Obviously, they are "**long tails**". It is a common challenge for each downstream task that models should tackle the long-tail distributed data. This can also explain why in System A and System B, the model performs *worse* in recognizing some specific entities on the 'tail', such as `BIO`, `FOOD`, and `DIS`, than the entities on the 'head' such as `PER` and `LOC`.
+It is a common challenge for each downstream task that models should tackle the long-tail distributed data. This can also explain why in System A and System B, the model performs *worse* in recognizing some specific entities on the 'tail', such as `BIO`, `FOOD`, and `DIS`, than the entities on the 'head' such as `PER` and `LOC`.
 
 To tackle this **long-tail** challenge, we can collect more data 'on the tail' thus establishing a relatively less biased dataset.
 
